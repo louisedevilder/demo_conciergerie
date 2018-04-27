@@ -1,0 +1,2 @@
+class BienEtre < ApplicationRecord
+end
