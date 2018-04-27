@@ -1,14 +1,11 @@
-class BarController < ApplicationController
+class UserController < ApplicationController
   def index
-    @bars = Bar.all
   end
 
   def new
   end
 
   def create
-    @bar = Bar.new
-    @bar.save!
   end
 
   def update

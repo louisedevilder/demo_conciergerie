@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Création des Bars ..."
+bars = [
+{
+  name: "Dydu Bar",
+  type: "Tendance",
+  address: "1 place Lainé 33000 Bordeaux"
+  }
+]
+Bar.create!(bars)
+puts "Création des Bars terminées"
