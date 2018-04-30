@@ -1,16 +1,11 @@
 class RestaurantController < ApplicationController
   def index
-  end
-
-  def new
+    @restaurants = Restaurant.all
   end
 
   def create
+    @restaurant = Restaurant.new
+    @restaurant.save!
   end
 
-  def update
-  end
-
-  def destroy
-  end
 end

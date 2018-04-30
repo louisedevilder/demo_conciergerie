@@ -11,9 +11,4 @@ class BarController < ApplicationController
     @bar.save!
   end
 
-  def update
-  end
-
-  def destroy
-  end
 end

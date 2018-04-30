@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
 
   create_table "bars", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "bar_type"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
 
   create_table "bien_etres", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "bien_etre_type"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
 
   create_table "musees", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "musee_type"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -47,14 +47,14 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
 
   create_table "night_clubs", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "night_club_type"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.string "type"
+    t.string "reservation_type"
     t.date "reservation_date"
     t.time "reservation_time"
     t.string "nb_person"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "restaurant_type"
     t.string "address"
     t.integer "price"
     t.datetime "created_at", null: false
@@ -75,14 +75,14 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
   end
 
   create_table "sports", force: :cascade do |t|
-    t.string "type"
+    t.string "sport_type"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "transports", force: :cascade do |t|
-    t.string "type"
+    t.string "transport_type"
     t.string "departure"
     t.string "arrival"
     t.datetime "created_at", null: false
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_145745) do
   end
 
   create_table "voyages", force: :cascade do |t|
-    t.string "type"
+    t.string "voyage_type"
     t.string "departure"
     t.string "arrival"
     t.date "departure_date"

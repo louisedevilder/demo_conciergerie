@@ -1,7 +1,7 @@
 class CreateVoyages < ActiveRecord::Migration[5.2]
   def change
     create_table :voyages do |t|
-      t.string :type
+      t.string :voyage_type
       t.string :departure
       t.string :arrival
       t.date :departure_date
